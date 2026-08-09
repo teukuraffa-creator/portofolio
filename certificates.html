@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Portfolio | Certificates
+  </title>
+  <link href="css/style.css" rel="stylesheet"/>
+  <link href="css/navbar.css" rel="stylesheet"/>
+  <link href="css/certificate.css" rel="stylesheet"/>
+  <link href="css/responsive.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="site-header">
+   <a class="brand" href="index.html">
+    <span class="brand-dot">
+    </span>
+    portfolio.
+   </a>
+   <button class="menu-toggle">
+    ☰
+   </button>
+   <nav class="nav">
+    <a href="index.html">
+     Home
+    </a>
+    <a href="about.html">
+     About
+    </a>
+    <a href="projects.html">
+     Projects
+    </a>
+    <a class="active" href="certificates.html">
+     Certificates
+    </a>
+    <a href="contact.html">
+     Contact
+    </a>
+   </nav>
+   <button class="theme-toggle">
+    ◐
+   </button>
+  </header>
+  <main>
+   <section class="section page-intro">
+    <p class="eyebrow">
+     05 / LEARNING JOURNEY
+    </p>
+    <h1>
+     Certificates.
+    </h1>
+   </section>
+   <section class="section certificates">
+    <p class="section-note">
+     Klik kartu untuk melihat informasi sertifikat.
+    </p>
+    <div class="certificate-grid" id="certificate-grid">
+    </div>
+   </section>
+  </main>
+<dialog class="certificate-modal" id="certificate-modal">
+
+  <button type="button" class="modal-close">
+    &times;
+  </button>
+
+  <div class="certificate-preview">
+
+    <button
+      type="button"
+      class="certificate-prev"
+      id="certificate-prev">
+      &#10094;
+    </button>
+
+    <img
+      id="modal-certificate-image"
+      src=""
+      alt="Preview sertifikat">
+
+    <button
+      type="button"
+      class="certificate-next"
+      id="certificate-next">
+      &#10095;
+    </button>
+
+    <div
+      class="certificate-counter"
+      id="certificate-counter">
+      1 / 1
+    </div>
+
+  </div>
+
+  <div class="modal-content">
+
+    <p class="eyebrow">
+      CERTIFICATE
+    </p>
+
+    <h2 id="modal-title"></h2>
+
+    <dl>
+
+      <div>
+        <dt>Issuer</dt>
+        <dd id="modal-issuer"></dd>
+      </div>
+
+      <div>
+        <dt>Date</dt>
+        <dd id="modal-date"></dd>
+      </div>
+
+    </dl>
+
+    <p id="modal-description"></p>
+
+  </div>
+
+</dialog>
+  <footer>
+   <span>
+    &copy; 2026 TEUKU RAFFA FEDRIANSYAH
+   </span>
+   <span>
+    PORTFOLIO
+   </span>
+  </footer>
+  <script src="js/navbar.js">
+  </script>
+  <script src="js/darkmode.js">
+  </script>
+  <script src="js/script.js">
+  </script>
+ </body>
+</html>
+

@@ -1,0 +1,18 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 80px;
+  padding: 0 6vw;
+  border-bottom: 1px solid var(--line);
+  background: color-mix(in srgb, var(--cream) 92%, transparent);
+  backdrop-filter: blur(12px);
+}
+.brand { color: var(--ink); font-size: 1.15rem; font-weight: 800; text-decoration: none; }
+.brand-dot { display: inline-block; width: 10px; height: 10px; margin-right: 4px; border-radius: 50%; background: var(--orange); }
+.nav { display: flex; gap: 24px; margin-left: auto; }.nav a { color: var(--muted); font-size: 13px; font-weight: 700; text-decoration: none; }.nav a.active, .nav a:hover { color: var(--ink); }
+.menu-toggle, .theme-toggle { border: 0; color: var(--ink); background: transparent; cursor: pointer; }.menu-toggle { display: none; font-size: 1.4rem; }
+@media (max-width: 800px) { .site-header { height: 65px; }.menu-toggle { display: block; margin-left: auto; }.theme-toggle { display: none; }.nav { position: absolute; top: 65px; right: 0; left: 0; display: none; flex-direction: column; gap: 18px; padding: 22px 6vw; margin: 0; border-bottom: 1px solid var(--line); background: var(--cream); }.nav.open { display: flex; } }
